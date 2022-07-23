@@ -1,15 +1,255 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'global';
+@import "libs";
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
 
+.header {
+  width: 100%;
+  background-image: url(../images/header-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__offer {
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+  &__offer-hint {
+    max-width: 384px;
+    font-size: 18px;
+    line-height: 19px;
+    @extend %proxima-600;
+    padding: 14px 7px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  &__offer-title {
+    padding: 8px 0 8px;
+    max-width: 640px;
+    @extend %proxima-600;
+    font-size: 34px;
+    line-height: 44px;
+    color: #eeecff;
+    span {
+      display: inline-block;
+      @extend %proxima-800;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 15px;
+    }
+  }
+  &__offer-subtitle {
+    font-size: 16px;
+    @extend %proxima-400;
+    max-width: 350px;
+    span {
+      font-size: 18px;
+      @extend %proxima-700;
+      color: $accent;
+    }
+  }
+  &__btn {
+    margin: 30px 0 88px;
+    @extend %btn;
+  }
+  &__offer-text {
+    @extend %proxima-600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+  }
+  &__offer-social {
+    display: flex;
+    align-items: center;
+  }
+  &__offer-social-text {
+    @extend %proxima-600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0cb408;
+    &::after {
+      content: url(../images/logo/arrow-right.svg);
+      position: relative;
+      top: 1px;
+    }
+  }
+  &__offer-social-list {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    img {
+      width: 35px;
+      height: 35px;
+      margin-left: 12px;
+    }
+  }
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__info-img {
+    position: absolute;
+    align-items: flex-end;
+    width: 463px;
+    bottom: 0;
+    right: -20px;
+  }
+  &__info-author {
+    background-color: #202a7e;
+    border-radius: 40px;
+    text-align: center;
+    max-width: 280px;
+    z-index: 2;
+    padding: 7px 39px;
+    margin-bottom: -7px;
+    span {
+      @extend %proxima-600;
+      font-size: 16px;
+      line-height: 19px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+  }
+  &__info-name {
+    @extend %proxima-800;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    padding-right: 20px;
+    &::after {
+      content: "";
+      background-image: url(../images/logo/ukraine.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 5px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+  &__info-statistic {
+    display: inline-flex;
+    flex-direction: column;
+    background: rgba(217, 217, 217, 0.25);
+    padding: 20px 45px 20px 45px;
+    border-radius: 40px 40px 0 0;
+    z-index: 1;
+  }
+  &__info-statistic-projects {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    @extend %proxima-600;
+    border-bottom: 1px solid #0cb408;
+    margin-bottom: 5px;
+    text-align: center;
+    span:first-child {
+      color: #0cb408;
+      font-size: 40px;
+      line-height: 49px;
+      margin-right: 15px;
+    }
+    span:last-child {
+      font-size: 16px;
+      line-height: 19px;
+      max-width: 110px;
+      text-align: left;
+    }
+  }
+  &__info-statistic-reviews {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    @extend %proxima-600;
+    text-align: center;
+    span:first-child {
+      color: #0cb408;
+      font-size: 40px;
+      line-height: 49px;
+      margin-right: 15px;
+    }
+    span:last-child {
+      font-size: 16px;
+      line-height: 19px;
+      max-width: 125px;
+      text-align: left;
+    }
+  }
+}
 
+.header-top {
+  border-bottom: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+  }
+  &__btn {
+    display: block;
+    margin-left: 22px;
+    font-size: 20px;
+    color: #0cb408;
+    border-bottom: 2px solid #0cb408;
+    cursor: pointer;
+  }
+  &__language {
+    display: block;
+    padding: 4px 8px;
+    margin-right: -61px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 20%;
+    cursor: pointer;
+  }
+}
 
+.header-bottom {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 15px;
+  }
+  &__description {
+    max-width: 160px;
+    font-size: 14px;
+    line-height: 16px;
+    @extend %proxima-400;
+  }
+  &__wrapper-tels {
+    flex-direction: row;
+    padding-bottom: 65px;
+  }
+  &__tel {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    padding-right: 29px;
+    padding-bottom: 10px;
+    &::after {
+      content: url(../images/logo/phone.svg);
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      margin-left: 9px;
+    }
+  }
+}
 
-
-
-
-
-
-
-@import 'media';
+@import "media";
