@@ -1,43 +1,48 @@
-$accent: #09b808;
-$btn: #66a0f7;
-$title: #36365d;
-$bg: #fff;
-$default: #ececec;
+$accent: #043446;
+// $btn: #66a0f7;
+$title: #14a1d5;
+$bg: #021926;
+// $default: #ececec;
 
-%proxima-800 {
-  font-family: "ProximaNova-Extrabold", sans-serif;
-  font-weight: 800;
-}
-
-%proxima-700 {
-  font-family: "ProximaNova-Bold", sans-serif;
+%gilroy-700 {
+  font-family: "Gilroy-Bold", sans-serif;
   font-weight: 700;
 }
 
-%proxima-600 {
-  font-family: "ProximaNova-Semibold", sans-serif;
+%gilroy-600 {
+  font-family: "Gilroy-Semibold", sans-serif;
   font-weight: 600;
 }
 
-%proxima-400 {
-  font-family: "ProximaNova-Regular", sans-serif;
+%gilroy-500 {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%gilroy-400 {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
 }
 
-%btn {
-  padding: 17px 40px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  background-color: $accent;
-  @extend %proxima-700;
-  box-shadow: 0px 0px 20px rgba(9, 184, 8, 0.2);
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
+%gilroy-300 {
+  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 300;
 }
+
+// Gilroy-Light %btn {
+//   padding: 17px 40px;
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   color: #fff;
+//   background-color: $accent;
+//   @extend %proxima-700;
+//   box-shadow: 0px 0px 20px rgba(9, 184, 8, 0.2);
+//   border-radius: 40px;
+//   border: none;
+//   cursor: pointer;
+// }
 
 // %checkbox-hiden,
 // %radio-hiden {

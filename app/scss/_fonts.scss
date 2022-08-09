@@ -1,31 +1,39 @@
 @font-face {
-  font-family: "ProximaNova-Extrabold";
+  font-family: "Gilroy-Light";
   font-style: normal;
-  src: url("../fonts/ProximaNova-Extrabld.woff2") format("woff2");
-  src: url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Light.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "ProximaNova-Semibold";
+  font-family: "Gilroy-Regular";
   font-style: normal;
-  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2");
-  src: url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "ProximaNova-Bold";
+  font-family: "Gilroy-Medium";
   font-style: normal;
-  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2");
-  src: url("../fonts/ProximaNova-Bold.woff") format("woff");
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "ProximaNova-Regular";
+  font-family: "Gilroy-Semibold";
   font-style: normal;
-  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
-  src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Bold.woff") format("woff");
   font-display: swap;
 }
