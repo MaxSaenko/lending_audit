@@ -7,9 +7,10 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  @extend %gilroy-700;
+  @extend %gilroy-400;
   display: flex;
   flex-direction: column;
+  background-color: $bg;
 }
 
 .main {
@@ -29,15 +30,35 @@ a {
   @extend %gilroy-600;
 }
 
-// .title {
-//   text-align: center;
-//   @extend %roboto-700;
-//   font-size: 48px;
-//   line-height: 65px;
-//   color: $title;
-//   margin-bottom: 10px;
-//   text-transform: uppercase;
-// }
+.main-btn {
+  @extend %gilroy-600;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  line-height: 33px;
+  padding: 27px 59px 26px;
+  border-radius: 50px;
+  box-shadow: 0.419px 7.989px 37.62px 0.38px rgba(0, 216, 255, 0.26);
+  background: linear-gradient(rgb(22, 172, 228) 0%, rgb(4, 52, 70) 100%);
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  @extend %gilroy-600;
+  font-size: 50px;
+  line-height: 65px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+  span {
+    color: $title;
+  }
+}
 
 // .text {
 //   text-align: center;
